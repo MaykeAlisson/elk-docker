@@ -1,0 +1,33 @@
+{
+	"index_patterns" : ["representante"],
+	"version" : 1,
+	"settings" : {
+		"index.refresh_interval" : "3s"
+	},
+    "mappings" : {
+        "properties": {
+                "id": { "type": "text" 
+        , "fields": {"keyword": { "type": "keyword", "ignore_above": 256 }}
+ } ,
+                "empresa": { "type": "long" 
+ }  ,
+                "cpf": { "type": "long" 
+ }  ,
+                "telefone": { "type": "long" 
+ }  ,
+                "nome": { "type": "text" 
+        , "fields": {"keyword": { "type": "keyword", "ignore_above": 256 }}
+ } ,
+                "ddd": { "type": "long" 
+ }  ,
+                "idRepresentante": { "type": "long" 
+ }  ,
+                "dataSaida": { "type": "date" 
+ } ,
+                "setor": { "type": "long" 
+ }  ,
+                "dataEntrada": { "type": "date" 
+ } 
+        }
+    }
+}
